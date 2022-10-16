@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        .x{
+            text-align: center;
+        }
+        table,
+        td{
+            margin: 150px auto;
+        }
+
+        .xpath{
+            padding: 6.5px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 am.</td>
+                <td rowspan="2">5:00 pm.</td>
+                <td class="x">Introduction to XML</td>
+            </tr>
+            <tr>
+                <td class="x">Validity. DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Tuesday</td>
+                <td>8:00 am.</td>
+                <td>11:00 am.</td>
+                <td rowspan="2" class="xpath">XPath</td>
+            </tr>
+            <tr>
+                <td rowspan="2">11:00 am.</td>
+                <td rowspan="2">2:00 pm.</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="x">XSL Transformations</td>
+            </tr>
+            <tr>
+                <td>2:00 pm.</td>
+                <td>5:00 pm.</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 am.</td>
+                <td>12:00 pm.</td>
+                <td class="x">XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <p>nth-child() Selector: This selector is used to match the elements based on their position in a group of siblings. It
+        matches every element that is the nth-child, regardless of the type, of its parent.</p>
+
+        <p>nth-of-type() Selector: This Selector is used to style only those elements which are the nth number of children of its
+        parent element. Any n may be a number, a keyword, or a formula.children</p>
+
+        <ol>
+    <li>   px
+        Pixels, or px, are one of the most common length units in CSS.</li>
+        
+        In CSS, 1 pixel is formally defined as 1/96 of an inch. All other absolute length units are based on this definition of
+        a pixel.
+        
+        But when that standard was originally formulated, most monitors had a resolution of 1024 x 768, and a DPI (dots per
+        inch) of 96.
+        
+        Screens on modern devices have much higher resolutions and DPIs, so a line that's 96 pixels long may not measure exactly
+        1 inch, depending on the device.
+        
+        Even though sizing in pixels can vary across devices, it's generally considered better to use pixels for screens.
+        
+        If you know that your page will be printed on a high quality printer, then you may consider using another unit like cm</li>
+        or mm.
+                
+    <li>   cm
+        Centimeters.
+        
+        In CSS, 1cm is roughly 37.8 pixels, or about 25.2/64 of an inch.</li>
+        
+    <li>   mm
+        Millimeters.
+        
+        In CSS, 1mm is roughly 3.78 pixels, or 1/10th of a centimeter.</li>
+        
+    <li>  in
+        Inches.
+        
+        In CSS, 1in is roughly 96 pixels, or about 2.54cm.</li>
+        
+    <li>   pt
+        Points.
+        
+        In CSS, 1pt is roughly 1.3333 pixels, or 1/72th of an inch.</li>
+        
+    <li>  pc
+        Picas.
+        
+        In CSS, 1pc is roughly 16 pixels, or 1/6 of an inch.</li>
+    </ol>
+    </div>
+    
+</body>
+
+</html>
